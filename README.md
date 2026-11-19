@@ -24,7 +24,7 @@ them.
 - **Local storage:** SQLite via sqflite (recipes), shared_preferences (settings)
 - **Backend:** Firebase Cloud Firestore (shared recipes, ratings, user profiles) with security rules
 - **Auth:** Firebase Authentication (email/password)
-- **Platform:** Android, published on Google Play
+- **Platform:** Android
 
 ## Architecture
 The app has four tabs (Recipe Book, Create, Discover, Account) inside a swipeable
