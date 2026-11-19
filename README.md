@@ -3,7 +3,7 @@
 A Flutter recipe app for building a personal recipe book and sharing favourites
 with a community feed. Recipes live on the device and work offline. Users can
 sign in to publish recipes to Discover, where others can browse, rate, and save
-them. I designed, built, and shipped it on my own.
+them. 
 
 
 ![Demo](images/demo.gif)
