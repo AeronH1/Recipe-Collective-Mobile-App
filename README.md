@@ -19,6 +19,16 @@ them.
 - **Accounts:** email/password sign-up with unique usernames, profile editing, and full account deletion that also removes your shared recipes and ratings
 - **Personalisation:** dark mode, default servings, default category, and unit preferences, all saved between sessions
 
+## Screenshots
+## Screenshots
+| Recipe Book | Discover Page | Recipe Preview | Hold To Preview | New Recipe |
+|---|---|---|---|---|
+| ![Recipe Book](images/RecipeBook.jpg) | ![Discover Page](images/DiscoverPage.jpg) | ![Recipe Preview](images/RecipePreview.jpg) | ![Hold To Preview](images/HoldToPreview.jpg) | ![New Recipe](images/NewRecipe.jpg) |
+
+| Login | Create Account | Account Page | Account Page Logged In | Settings |
+|---|---|---|---|---|
+| ![Login](images/Login.jpg) | ![Create Account](images/CreateAccount.jpg) | ![Account Page](images/AccountPage.jpg) | ![Account Page Logged In](images/AccountPageLoggedIn.jpg) | ![Settings](images/Settings.jpg) |
+
 ## Tech Stack
 - **App:** Dart, Flutter, google_fonts, cached_network_image, image_picker
 - **Local storage:** SQLite via sqflite (recipes), shared_preferences (settings)
@@ -45,15 +55,7 @@ Flutter UI ──────┤
                  └──► AuthService ──► Firebase Auth
 ```
 
-## Screenshots
-## Screenshots
-| Recipe Book | Discover Page | Recipe Preview | Hold To Preview | New Recipe |
-|---|---|---|---|---|
-| ![Recipe Book](images/RecipeBook.jpg) | ![Discover Page](images/DiscoverPage.jpg) | ![Recipe Preview](images/RecipePreview.jpg) | ![Hold To Preview](images/HoldToPreview.jpg) | ![New Recipe](images/NewRecipe.jpg) |
 
-| Login | Create Account | Account Page | Account Page Logged In | Settings |
-|---|---|---|---|---|
-| ![Login](images/Login.jpg) | ![Create Account](images/CreateAccount.jpg) | ![Account Page](images/AccountPage.jpg) | ![Account Page Logged In](images/AccountPageLoggedIn.jpg) | ![Settings](images/Settings.jpg) |
 
 ## What I Learned
 - **Offline first, cloud when it matters:** I kept each user's recipe book in SQLite so the core app works with no account and no signal, and used Firestore only for shared content. Changing the local schema meant writing versioned `onUpgrade` migrations (for example, adding `savedFromHub` and `authorId` columns) so updates never wiped existing recipes.
